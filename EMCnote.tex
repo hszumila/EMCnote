@@ -1,0 +1,190 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Journal Article
+% LaTeX Template
+% Version 1.3 (9/9/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Frits Wenneker (http://www.howtotex.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[oneside]{article}
+
+\usepackage{lipsum} % Package to generate dummy text throughout this template
+\usepackage{amsmath}
+\usepackage[sc]{mathpazo} % Use the Palatino font
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+\linespread{1.05} % Line spacing - Palatino needs more space between lines
+\usepackage{microtype} % Slightly tweak font spacing for aesthetics
+\usepackage{amsmath}
+
+\usepackage[hmarginratio=1:1,top=32mm,columnsep=20pt]{geometry} % Document margins
+\usepackage{multicol} % Used for the two-column layout of the document
+\usepackage[hang, small,labelfont=bf,up,textfont=it,up]{caption} % Custom captions under/above floats in tables or figures
+\usepackage{booktabs} % Horizontal rules in tables
+\usepackage{float} % Required for tables and figures in the multi-column environment - they need to be placed in specific locations with the [H] (e.g. \begin{table}[H])
+\usepackage{hyperref} % For hyperlinks in the PDF
+\restylefloat{figure}
+\usepackage{graphicx}
+\usepackage{array}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+
+\usepackage{lettrine} % The lettrine is the first enlarged letter at the beginning of the text
+\usepackage{paralist} % Used for the compactitem environment which makes bullet points with less space between them
+
+\usepackage{abstract} % Allows abstract customization
+\renewcommand{\abstractnamefont}{\normalfont\bfseries} % Set the "Abstract" text to bold
+%\renewcommand{\abstracttextfont}{\normalfont\small\itshape} % Set the abstract itself to small italic text
+
+\usepackage{titlesec} % Allows customization of titles
+%\renewcommand\thesection{\Roman{section}} % Roman numerals for the sections
+%\renewcommand\thesubsection{\Roman{subsection}} % Roman numerals for subsections
+%\titleformat{\section}[block]{\large\scshape\centering}{\thesection.}{1em}{} % Change the look of the section titles
+\titleformat{\subsection}[block]{\large}{\thesubsection.}{1em}{} % Change the look of the section titles
+
+\usepackage{fancyhdr} % Headers and footers
+\pagestyle{fancy} % All pages have headers and footers
+\fancyhead{} % Blank out the default header
+\fancyfoot{} % Blank out the default footer
+%\fancyhead[C]{Hall C Collaboration $\bullet$ \today} % Custom header text
+\fancyhead[C]{\today} % Custom header text
+\fancyfoot[RO,LE]{\thepage} % Custom footer text
+\usepackage{authblk}
+
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+\title{\vspace{-15mm}\fontsize{20pt}{10pt}\selectfont\textbf{A new method to examine the EMC Effect using the $F_2^{n}$ structure function}} % Article title
+
+\author[1]{H. Szumila-Vance}
+\author[2]{I. Cloet}
+\author[1]{C. Keppel}
+\author[3]{N. Kalentarians}
+\affil[1]{Thomas Jefferson National Accelerator Facility, Newport News, VA}
+\affil[2]{Argonne National Laboratory, Argonne, IL}
+\affil[3]{Virginia Union University, Richmond, VA}
+\renewcommand\Authands{ , }
+
+
+
+%\author{
+%\large
+%\textsc{Holly Szumila-Vance}\thanks{}\\[2mm] % Your name
+%\normalsize Jefferson Lab \\ % Your institution
+%\normalsize \href{mailto:hszumila@jlab.org}{hszumila@jlab.org} % Your email address
+%\vspace{-5mm}
+%}
+\date{}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\maketitle % Insert title
+
+\thispagestyle{fancy} % All pages have headers and footers
+
+%----------------------------------------------------------------------------------------
+%	ABSTRACT
+%----------------------------------------------------------------------------------------
+
+\begin{abstract}
+Here we introduce a new method to study the EMC Effect in nuclei by re-examining data from the SLAC E139 experiment and determining the magnitude of the EMC Effect using the free neutron structure function in the denominator. The free neutron structure function has only recently been extracted in a systematic study of the world data and is available as part of the Jefferson Lab-CTEQ Collaboration.
+
+\end{abstract}
+%\newpage
+%\tableofcontents
+%\newpage
+ %\listoffigures
+% \newpage
+%\listoftables
+%\newpage
+%----------------------------------------------------------------------------------------
+%	ARTICLE CONTENTS
+%----------------------------------------------------------------------------------------
+
+
+\section{Introduction}
+  
+\section{Theory predictions using nuclear matter}
+  
+\section{$F_2^n$ extraction}
+
+
+%----------------------------------------------------------------------------------------
+%	REFERENCE LIST
+%----------------------------------------------------------------------------------------
+
+\begin{thebibliography}{99} 
+
+\bibitem{field17} field17 gitHub repository, https://github.com/JeffersonLab/field17
+ 
+\end{thebibliography}
+
+%----------------------------------------------------------------------------------------
+
+ %\begin{figure}[H]
+%  \centering
+  %    	  \includegraphics[width=0.9\textwidth]{plots/hb_leff.png}
+ 	% \caption[Horizontal Bender $L_{eff}$ comparison with TOSCA]{Shown here is data ($L_{eff}$) from a positive and negative ramping of the HB prior to the installation of the final side iron and clamp. This data compares reasonably well with the corresponding TOSCA model.}
+%  \label{fig:hb_leff}
+ %\end{figure} 
+
+
+%\subsection{Relevant changes to setting the magnets}
+
+
+%\begin{table}[htb!]
+%\caption{\label{MagnetFactors} Progression of the field setting model for data-taking.}
+%\centering
+%\begin{tabular}{ | C{2.5cm} | C{2cm} | C{2cm} | C{2cm} | C{2cm} | C{2cm} | }
+ %\hline
+ %\textbf{Magnet} & \textbf{$B/I_{V0}$~[kG/A]} & \textbf{$P/I_{V0}$}~[kG/A] & \textbf{$B/I$ sat model?} & \textbf{$L_{eff}$ sat model?}  & \textbf{$P/I$ v6 factor} \\ 
+  %\hline
+% HB & $6.485E-03$ & $0.003$ & v6 & v6 & 0.983 \\ 
+  %\hline
+ % Q1 & $7.103E-03$ & $0.004$ & v0-v2, v6 & v0-v2 & 0.983$\times$0.97 \\ 
+  %\hline
+  % Q2 & $9.436E-03$ & $0.003$ & -- & -- & 0.983$\times$0.96 \\ 
+  %\hline
+  % Q3 & $9.728E-03$ & $0.004$ & v0-v2 & -- & 0.983$\times$0.97 \\ 
+  %\hline
+   % dipole & $1.184E-02$ & $3.188e-03$ & v0-v5 & -- & 0.983 \\ 
+ % \hline
+   % \end{tabular}
+%\end{table} 
+
+%\begin{description}
+%\item[$\bullet$ Version 1] Applied on December 11, 2017 at 4:21~am starting with SHMS run 1605. All quads are scaled by a factor of 1.05 times their nominal setting. The HB and dipole are not modified~\cite{V1_holly}.
+%\item[$\bullet$ Version 2] Applied on December 19, 2017 at 9:06~am starting with SHMS run 1655. The original 1.05 scale factor for the quads is removed and modified to be: Q1 at 1.03, Q2 at 1.04, Q3 at 1.03~\cite{V2_holly}.
+%\item[$\bullet$ Version 3] Applied on April 5, 2018 at 3:47~pm starting with coincidence run 3288. The Q1 and Q3 saturation modifications (in the code) are completely removed~\cite{V3_holly}.
+%\item[$\bullet$ Version 4 and 5] Applied on August 14, 2018 at 6:14~pm starting with SHMS run 4432, HMS run 2347, and coincidence run 4436. All SHMS magnets (HB, Q1, Q2, Q3, dipole) and scaled up by a factor of 1/0.983 from the commissioning studies in order to better match the desired central momentum setting~\cite{V4_holly}. Additionally, any non-linear dipole modeling behavior is removed. 
+%\item[$\bullet$ Version 6] Applied on September 29, 2018 at 5:06~pm starting with coincidence run 4780. A saturation model for Q1 is applied at 6~GeV and above: $1/(-0.00077P^2+0.0132P+0.94938)$. This was not studied above 8.035~GeV central momentum and uses a constant value at and above 8.035~GeV from the equation. 
+%\end{description}
+
+
+%\begin{equation}
+%X^{\prime}\quad Y\quad Y^{\prime}\quad D\quad ijklm
+%\label{eq:matrixelements}
+%\end{equation}
+
+%\begin{align}
+%x^{\prime}_{tar} =& \sum\limits_{ijklm} X^{\prime}_{ijklm}x^i_{fp}x^{\prime j}_{fp}y^k_fpy^{\prime l}_{fp}x^m_{tar}\nonumber \\
+%y_{tar} =&  \sum\limits_{ijklm} Y_{ijklm}x^i_{fp}x^{\prime j}_{fp}y^k_fpy^{\prime l}_{fp}x^m_{tar}\nonumber\\
+%y^{\prime}_{tar} =&  \sum\limits_{ijklm} Y^{\prime}_{ijklm}x^i_{fp}x^{\prime j}_{fp}y^k_fpy^{\prime l}_{fp}x^m_{tar}\nonumber\\
+%\delta_{tar} =&  \sum\limits_{ijklm} D_{ijklm}x^i_{fp}x^{\prime j}_{fp}y^k_fpy^{\prime l}_{fp}x^m_{tar}
+%\label{eq:matrixeqn}
+%\end{align}
+
+\end{document}
