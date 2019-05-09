@@ -65,7 +65,7 @@
 %	TITLE SECTION
 %----------------------------------------------------------------------------------------
 
-\title{\vspace{-15mm}\fontsize{20pt}{10pt}\selectfont\textbf{A new method to examine the EMC Effect using the $F_2^{n}$ structure function}} % Article title
+\title{\vspace{-15mm}\fontsize{20pt}{10pt}\selectfont\textbf{A new method to study the EMC Effect using the $F_2^{n}$ structure function}} % Article title
 
 \author[1]{H. Szumila-Vance}
 \author[2]{I. Cloet}
@@ -100,7 +100,7 @@
 %----------------------------------------------------------------------------------------
 
 \begin{abstract}
-Here we introduce a new method to study the EMC Effect in nuclei by re-examining data from the SLAC E139 experiment and determining the magnitude of the EMC Effect using the free neutron structure function in the denominator. The free neutron structure function has only recently been extracted in a systematic study of the world data and is available as part of the Jefferson Lab-CTEQ Collaboration.
+The EMC effect is the go-to observable in the deep inelastic scattering regime that explains how nucleons in bound nuclei are modified compared to bound nucleons in deuterium.  The free neutron structure function has recently been extracted in a systematic study of the world data and is available as part of the Jefferson Lab-CTEQ Collaboration. Here we introduce a new method to study the EMC Effect in nuclei by re-examining data from the SLAC E139 experiment and determining the magnitude of the EMC Effect using the free neutron and free proton structure functions in the denominator. From the extraction of the free neutron from world data, it is possible to examine the nuclear effects in deuterium and their contribution to our interpretation of the EMC Effect.
 
 \end{abstract}
 %\newpage
@@ -116,11 +116,126 @@ Here we introduce a new method to study the EMC Effect in nuclei by re-examining
 
 
 \section{Introduction}
+
+We chose to use the SLAC E139 data set because it is the most complete published list of cross sections available. From the initial cross sections given, we converted the absolute cross section to the structure function by using the kinematics and R1990 fitting. 
+
   
 \section{Theory predictions using nuclear matter}
-  
-\section{$F_2^n$ extraction}
 
+Ian can write something here.
+  
+\section{$F_2^n$ extraction and the CJ15 fit}
+
+We need to point to CJ and how the world data was extracted. 
+
+ \begin{figure}
+\begin{minipage}{0.5\textwidth}
+ \includegraphics[width=\textwidth]{plots/f2np_plot.png}
+\end{minipage}\hfill\begin{minipage}{0.5\textwidth}
+ \includegraphics[width=\textwidth]{plots/f2npratio_plot.png}
+ \end{minipage}
+%  \caption[Expected detectable $A^{\prime}$ signal yield for the individual L1L1 data sets]{The expected detectable $A^{\prime}$ signal yield as calculated from Equation~\eqref{eq:signal} is shown for the 0.5~mm L1L1 data on the left and the 1.5~mm L1L1 data on the right. The highest signal expected from the 0.5~mm data is 0.109 events and from the 1.5~mm data is 0.02 events.}
+  \label{fig:L1L1_reach}
+\end{figure} 
+ 
+\subsection{$Q^2$ dependence}
+
+  \begin{figure}
+\begin{minipage}{0.5\textwidth}
+ \includegraphics[width=\textwidth]{plots/p_CJ.png}
+\end{minipage}\hfill\begin{minipage}{0.5\textwidth}
+ \includegraphics[width=\textwidth]{plots/d_CJ.png}
+ \end{minipage}
+%  \caption[Expected detectable $A^{\prime}$ signal yield for the individual L1L1 data sets]{The expected detectable $A^{\prime}$ signal yield as calculated from Equation~\eqref{eq:signal} is shown for the 0.5~mm L1L1 data on the left and the 1.5~mm L1L1 data on the right. The highest signal expected from the 0.5~mm data is 0.109 events and from the 1.5~mm data is 0.02 events.}
+  \label{fig:L1L1_reach}
+\end{figure} 
+ 
+\begin{figure}[H]
+  \centering
+      	  \includegraphics[width=0.5\textwidth]{plots/dpn_allCJ.png}
+ 	 \caption[]{.}
+  \label{fig:cj_leff}
+ \end{figure} 
+ 
+  \begin{figure}
+\begin{minipage}{0.5\textwidth}
+ \includegraphics[width=\textwidth]{plots/dpratio_CJ.png}
+\end{minipage}\hfill\begin{minipage}{0.5\textwidth}
+ \includegraphics[width=\textwidth]{plots/dnratio_CJ.png}
+ \end{minipage}
+%  \caption[Expected detectable $A^{\prime}$ signal yield for the individual L1L1 data sets]{The expected detectable $A^{\prime}$ signal yield as calculated from Equation~\eqref{eq:signal} is shown for the 0.5~mm L1L1 data on the left and the 1.5~mm L1L1 data on the right. The highest signal expected from the 0.5~mm data is 0.109 events and from the 1.5~mm data is 0.02 events.}
+  \label{fig:L1L1_reach}
+\end{figure} 
+
+\section{Structure function extraction from the E139 cross sections}
+
+Discuss the input cross section, conversion to F2A and the iso-scalar correction.
+
+
+
+\begin{equation}
+F_2 = \dfrac{d^2\sigma}{d\Omega dE'}\dfrac{1+R}{1+\epsilon R}\dfrac{K\nu}{4\pi^2\alpha\Gamma (1+\nu^2/Q^2)}
+\label{eq:matrixelements}
+\end{equation}
+
+\begin{align}
+\epsilon=&(1+2\dfrac{\nu^2+Q^2}{Q^2}tan^2\dfrac{\theta}{2})^{-1}\\
+K=&\dfrac{W^2-M^2}{2M}\\
+\Gamma=&\dfrac{\alpha KE'}{2\pi^2Q^2E(1-\epsilon)}
+\label{eq:matrixeqn}
+\end{align}
+
+\begin{equation}
+f_{iso}^A = \dfrac{\dfrac{1}{2}(1+F_2^n/F_2^p)}{\dfrac{1}{A}(Z+(A-Z)F_2^n/F_2^p)}
+\label{eq:matrixelements}
+\end{equation}
+
+Plots: EMC ratios
+
+\section{General observations}
+
+Plots: A/n and A/p ratios per nucleon, A/Nn and A/Zp plot
+
+
+\section{Deuterium nuclear effects and heavier nuclei}
+
+\subsection{Deuterium}
+
+Plots: show deuterium from Whitlow as A/p+n, show Whitlow+BONUS as n/d
+
+\subsection{Heavier nuclei}
+
+Include a table of the fit slopes with errors
+\begin{table}[htb!]
+\caption{\label{SlopeFits} Summary of linear fits to $x_B$.}
+\centering
+\begin{tabular}{ | C{2.5cm} | C{2cm} | C{2cm} | C{2cm} | C{2cm} | }
+ \hline
+ \textbf{Nucleus} & \textbf{A/d slope} & \textbf{A/d intercept} & \textbf{A/(n+p) slope} & \textbf{A/(n+p) intercept} \\ 
+  \hline
+%HB & $6.485E-03$ & $0.003$ & v6 & v6 & 0.983 \\ 
+  %\hline
+ % Q1 & $7.103E-03$ & $0.004$ & v0-v2, v6 & v0-v2 & 0.983$\times$0.97 \\ 
+  %\hline
+  % Q2 & $9.436E-03$ & $0.003$ & -- & -- & 0.983$\times$0.96 \\ 
+  %\hline
+  % Q3 & $9.728E-03$ & $0.004$ & v0-v2 & -- & 0.983$\times$0.97 \\ 
+  %\hline
+   % dipole & $1.184E-02$ & $3.188e-03$ & v0-v5 & -- & 0.983 \\ 
+  \hline
+    \end{tabular}
+\end{table} 
+
+
+
+
+\section{Conclusions}
+
+
+
+\section{Acknowledgments}
+
+The authors would like to thank Shujie Li for constructing the most complete world $F_2^n$ data set to date and Alberto Accardi and Wally Melnitchouk for providing crucial insights and interpretations for this analysis.  
 
 %----------------------------------------------------------------------------------------
 %	REFERENCE LIST
@@ -128,22 +243,35 @@ Here we introduce a new method to study the EMC Effect in nuclei by re-examining
 
 \begin{thebibliography}{99} 
 
-\bibitem{field17} field17 gitHub repository, https://github.com/JeffersonLab/field17
+\bibitem{CJ15Fit} A. Accardi, L. T. Brady, W. Melnitchouk, J. F. Owens and N. Sato, Phys.Rev. D93 (2016) 114017
+
+\bibitem{Gomez:1993ri} 
+  J.~Gomez {\it et al.},
+  ``Measurement of the A-dependence of deep inelastic electron scattering,''
+  Phys.\ Rev.\ D {\bf 49}, 4348 (1994).
+  doi:10.1103/PhysRevD.49.4348
+
+\bibitem{Griffioen:2015hxa} 
+  K.~A.~Griffioen {\it et al.},
+  ``Measurement of the EMC Effect in the Deuteron,''
+  Phys.\ Rev.\ C {\bf 92}, no. 1, 015211 (2015)
+  doi:10.1103/PhysRevC.92.015211
+  [arXiv:1506.00871 [hep-ph]].
+
+\bibitem{Rubin:2011} 
+  J.~G.~Rubin, J.~Arrington,
+  ``A New Extraction of Neutron Structure Functions from Existing Inclusive DIS Data,''
+  doi:	10.1063/1.3631528
+  [arXiv:1101.3506v2 [nucl-ex]].
+  
+\bibitem{Whitlow:R1990} L.W.Whitlow, SLAC-Report-357, Ph.D. Thesis, Stanford University, March 1990.
+
+\bibitem{XS_E139} https://www.slac.stanford.edu/exp/e139/E139.RESULTS
+ 
  
 \end{thebibliography}
 
 %----------------------------------------------------------------------------------------
-
- %\begin{figure}[H]
-%  \centering
-  %    	  \includegraphics[width=0.9\textwidth]{plots/hb_leff.png}
- 	% \caption[Horizontal Bender $L_{eff}$ comparison with TOSCA]{Shown here is data ($L_{eff}$) from a positive and negative ramping of the HB prior to the installation of the final side iron and clamp. This data compares reasonably well with the corresponding TOSCA model.}
-%  \label{fig:hb_leff}
- %\end{figure} 
-
-
-%\subsection{Relevant changes to setting the magnets}
-
 
 %\begin{table}[htb!]
 %\caption{\label{MagnetFactors} Progression of the field setting model for data-taking.}
@@ -172,19 +300,5 @@ Here we introduce a new method to study the EMC Effect in nuclei by re-examining
 %\item[$\bullet$ Version 4 and 5] Applied on August 14, 2018 at 6:14~pm starting with SHMS run 4432, HMS run 2347, and coincidence run 4436. All SHMS magnets (HB, Q1, Q2, Q3, dipole) and scaled up by a factor of 1/0.983 from the commissioning studies in order to better match the desired central momentum setting~\cite{V4_holly}. Additionally, any non-linear dipole modeling behavior is removed. 
 %\item[$\bullet$ Version 6] Applied on September 29, 2018 at 5:06~pm starting with coincidence run 4780. A saturation model for Q1 is applied at 6~GeV and above: $1/(-0.00077P^2+0.0132P+0.94938)$. This was not studied above 8.035~GeV central momentum and uses a constant value at and above 8.035~GeV from the equation. 
 %\end{description}
-
-
-%\begin{equation}
-%X^{\prime}\quad Y\quad Y^{\prime}\quad D\quad ijklm
-%\label{eq:matrixelements}
-%\end{equation}
-
-%\begin{align}
-%x^{\prime}_{tar} =& \sum\limits_{ijklm} X^{\prime}_{ijklm}x^i_{fp}x^{\prime j}_{fp}y^k_fpy^{\prime l}_{fp}x^m_{tar}\nonumber \\
-%y_{tar} =&  \sum\limits_{ijklm} Y_{ijklm}x^i_{fp}x^{\prime j}_{fp}y^k_fpy^{\prime l}_{fp}x^m_{tar}\nonumber\\
-%y^{\prime}_{tar} =&  \sum\limits_{ijklm} Y^{\prime}_{ijklm}x^i_{fp}x^{\prime j}_{fp}y^k_fpy^{\prime l}_{fp}x^m_{tar}\nonumber\\
-%\delta_{tar} =&  \sum\limits_{ijklm} D_{ijklm}x^i_{fp}x^{\prime j}_{fp}y^k_fpy^{\prime l}_{fp}x^m_{tar}
-%\label{eq:matrixeqn}
-%\end{align}
 
 \end{document}
