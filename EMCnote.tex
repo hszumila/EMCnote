@@ -134,27 +134,27 @@ We need to point to CJ and how the world data was extracted.
 \end{minipage}\hfill\begin{minipage}{0.5\textwidth}
  \includegraphics[width=\textwidth]{plots/f2npratio_plot.png}
  \end{minipage}
-%  \caption[Expected detectable $A^{\prime}$ signal yield for the individual L1L1 data sets]{The expected detectable $A^{\prime}$ signal yield as calculated from Equation~\eqref{eq:signal} is shown for the 0.5~mm L1L1 data on the left and the 1.5~mm L1L1 data on the right. The highest signal expected from the 0.5~mm data is 0.109 events and from the 1.5~mm data is 0.02 events.}
-  \label{fig:L1L1_reach}
+  \caption[$F_2^{n,p}$ characteristics]{Left: The extracted $F_2^n$ from the world DIS data is shown in blue, and the $F_2^p$ from the NMC global fit is shown in red for the same corresponding $x_B$ and $Q^2$. Right: The ratio of the $F_2^n/F_2^p$ from the left is shown as a function of $x_B$.}
+  \label{fig:F2np_general}
 \end{figure} 
  
 \subsection{$Q^2$ dependence}
 
-  \begin{figure}
+\begin{figure}
 \begin{minipage}{0.5\textwidth}
  \includegraphics[width=\textwidth]{plots/p_CJ.png}
 \end{minipage}\hfill\begin{minipage}{0.5\textwidth}
  \includegraphics[width=\textwidth]{plots/d_CJ.png}
  \end{minipage}
-%  \caption[Expected detectable $A^{\prime}$ signal yield for the individual L1L1 data sets]{The expected detectable $A^{\prime}$ signal yield as calculated from Equation~\eqref{eq:signal} is shown for the 0.5~mm L1L1 data on the left and the 1.5~mm L1L1 data on the right. The highest signal expected from the 0.5~mm data is 0.109 events and from the 1.5~mm data is 0.02 events.}
-  \label{fig:L1L1_reach}
+  \caption[Proton and deuteron from CJ15]{Left: The proton structure function from the CJ15 fit is shown as a function of $x_B$ for various fixed $Q^2$. Right: The deuteron structure function from the CJ15 fit is shown as a function of $x_B$ for various fixed $Q^2$.}
+  \label{fig:pd_CJ15}
 \end{figure} 
  
 \begin{figure}[H]
   \centering
       	  \includegraphics[width=0.5\textwidth]{plots/dpn_allCJ.png}
- 	 \caption[]{.}
-  \label{fig:cj_leff}
+ 	 \caption[Deuteron structure function from CJ15]{The deuteron structure function divided by the sum of the free proton and free neutron structure functions from the CJ15 fit is shown for various $Q^2$. This ratio roughly shows the magnitude of the nuclear effects in the deuteron. The $Q^2$ dependence shows significant spread above $x_B=0.6$ where the ratio begins to increase.}
+  \label{fig:dpn_cj}
  \end{figure} 
  
   \begin{figure}
@@ -163,8 +163,8 @@ We need to point to CJ and how the world data was extracted.
 \end{minipage}\hfill\begin{minipage}{0.5\textwidth}
  \includegraphics[width=\textwidth]{plots/dnratio_CJ.png}
  \end{minipage}
-%  \caption[Expected detectable $A^{\prime}$ signal yield for the individual L1L1 data sets]{The expected detectable $A^{\prime}$ signal yield as calculated from Equation~\eqref{eq:signal} is shown for the 0.5~mm L1L1 data on the left and the 1.5~mm L1L1 data on the right. The highest signal expected from the 0.5~mm data is 0.109 events and from the 1.5~mm data is 0.02 events.}
-  \label{fig:L1L1_reach}
+  \caption[Deuteron ratios from CJ15]{Left: The deuterium structure function from the CJ15 fit is shown as a ratio to the proton structure function from CJ15 for various $Q^2$. Right: The deuterium structure function from the CJ15 fit is shown as a ratio to the neutron structure function from CJ15 for various $Q^2$.}
+  \label{fig:}
 \end{figure} 
 
 \section{Structure function extraction from the E139 cross sections}
@@ -193,15 +193,30 @@ f_{iso}^A = \dfrac{\dfrac{1}{2}(1+F_2^n/F_2^p)}{\dfrac{1}{A}(Z+(A-Z)F_2^n/F_2^p)
 Plots: EMC ratios
 
 \section{General observations}
-
-Plots: A/n and A/p ratios per nucleon, A/Nn and A/Zp plot
-
-
+ 
+  \begin{figure}
+\begin{minipage}{0.5\textwidth}
+ \includegraphics[width=\textwidth]{plots/Anp_data_ratio.png}
+\end{minipage}\hfill\begin{minipage}{0.5\textwidth}
+ \includegraphics[width=\textwidth]{plots/AZNnp_data_ratio.png}
+ \end{minipage}
+  \caption[$F_2^A$ ratio to $F_2^n$ and $F_2^p$]{Left: $F_2^A$ calculated from the published SLAC E139 cross sections is taken as a ratio per nucleon to $F_2^n$ and $F_2^p$, separately. The published EMC ratios for carbon and gold~\cite{Malace:2014uea} are shown for reference as $F_2^A/F_2^d$ per nucleon. Theory predictions for the $F_2^A$ structure function per nucleon as a ratio to $F_2^p$ are shown. Right: $F_2^A$ calculated from the published SLAC E139 cross sections is taken as a ratio per neutron or proton and $F_2^n$ and $F_2^p$, separately. The published EMC ratios for carbon and gold~\cite{Malace:2014uea} are shown for reference.}
+  \label{fig:data_np_ratio}
+\end{figure}  
+ 
+ 
 \section{Deuterium nuclear effects and heavier nuclei}
 
 \subsection{Deuterium}
 
-Plots: show deuterium from Whitlow as A/p+n, show Whitlow+BONUS as n/d
+\begin{figure}[H]
+  \centering
+      	  \includegraphics[width=0.5\textwidth]{plots/deuterium_q2.png}
+ 	 \caption[Deuterium data from SLAC]{The global Whitlow deuterium data from SLAC~\cite{XS_d} is shown divided by the sum of the free proton and free neutron structure functions from the CJ15 fit.}
+  \label{fig:d2_q2}
+ \end{figure}
+
+plots: include d/n or n/d of Whitlow+BONUS to show Q2 dependency
 
 \subsection{Heavier nuclei}
 
@@ -230,6 +245,7 @@ Include a table of the fit slopes with errors
 
 
 \section{Conclusions}
+n and p have Q2 dependence and deuterium is not so linear. 
 
 
 
@@ -267,6 +283,21 @@ The authors would like to thank Shujie Li for constructing the most complete wor
 \bibitem{Whitlow:R1990} L.W.Whitlow, SLAC-Report-357, Ph.D. Thesis, Stanford University, March 1990.
 
 \bibitem{XS_E139} https://www.slac.stanford.edu/exp/e139/E139.RESULTS
+
+\bibitem{XS_d} http://www.slac.stanford.edu/exp/e140/SIGMA.D2\_357
+
+\bibitem{KulaginPetti} Alekhin, S. I. and Kulagin, S. A. and Petti, R.,
+  ``Nuclear effects in the deuteron and constraints on the $d/u$ ratio,''
+  Phys.\ Rev.\ D {\bf 96}, no. 5, 0054005 (2017)
+  doi:10.1103/PhysRevD.96.054005
+  [arXiv:1704.00204].
+
+\bibitem{Malace:2014uea} 
+  S.~Malace, D.~Gaskell, D.~W.~Higinbotham and I.~Cloet,
+  ``The Challenge of the EMC Effect: existing data and future directions,''
+  Int.\ J.\ Mod.\ Phys.\ E {\bf 23}, no. 08, 1430013 (2014)
+  doi:10.1142/S0218301314300136
+  [arXiv:1405.1270 [nucl-ex]].
  
  
 \end{thebibliography}
