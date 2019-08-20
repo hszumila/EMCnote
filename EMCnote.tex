@@ -70,7 +70,8 @@
 \author[1]{H. Szumila-Vance}
 \author[2]{I. Cloet}
 \author[1]{C. Keppel}
-\author[3]{N. Kalentarians}
+\author[3]{S. Escalante}
+\author[3]{N. Kalantarians}
 \affil[1]{Thomas Jefferson National Accelerator Facility, Newport News, VA}
 \affil[2]{Argonne National Laboratory, Argonne, IL}
 \affil[3]{Virginia Union University, Richmond, VA}
@@ -100,8 +101,7 @@
 %----------------------------------------------------------------------------------------
 
 \begin{abstract}
-The EMC effect is the go-to observable in the deep inelastic scattering regime that explains how nucleons in bound nuclei are modified compared to bound nucleons in deuterium.  The free neutron structure function has recently been extracted in a systematic study of the world data and is available as part of the Jefferson Lab-CTEQ Collaboration. Here we introduce a new method to study the EMC Effect in nuclei by re-examining data from the SLAC E139 experiment and determining the magnitude of the EMC Effect using the free neutron and free proton structure functions in the denominator. From the extraction of the free neutron from world data, it is possible to examine the nuclear effects in deuterium and their contribution to our interpretation of the EMC Effect.
-
+The persistently mysterious deviations from unity of the ratio of nuclear target structure functions to those of deuterium as measured in deep inelastic scattering (termed the ``EMC Effect") have become the canonical observable for studies of nuclear medium modifications to free nucleon structure in the valence regime. The structure function of the free proton is well known from numerous experiments spanning decades. The free neutron structure function, however, has remained difficult to access. Only recently has it been extracted in a systematic study of the global data within a parton distribution function extraction framework and is available from the CTEQ-Jefferson Lab (CJ) Collaboration. Here we leverage the latter to introduce a new method to study the EMC Effect in nuclei by re-examining existing data and by now determining the magnitude of the medium modifications to the free neutron and proton structure functions independently. From the extraction of the free neutron from world data, it is possible to examine the nuclear effects in deuterium and their contribution to our interpretation of the EMC Effect. In this study, we observe that the ratio of the deuteron to the sum of the free neutron and proton structure functions has some $x_{B}$ and $Q^{2}$ dependencies implying that the magnitude of the standard EMC Effect is in part due to the nuclear effects of the deuteron and also exhibits some $x_{B}$ and $Q^{2}$ dependence.
 \end{abstract}
 %\newpage
 %\tableofcontents
@@ -117,6 +117,10 @@ The EMC effect is the go-to observable in the deep inelastic scattering regime t
 
 \section{Introduction}
 
+The EMC Effect
+
+
+
 We chose to use the SLAC E139 data set because it is the most complete published list of cross sections available. From the initial cross sections given, we converted the absolute cross section to the structure function by using the kinematics and R1990 fitting. 
 
 
@@ -129,7 +133,23 @@ We chose to use the SLAC E139 data set because it is the most complete published
  
 \section{Theory predictions using nuclear matter}
 
-Ian can write something here.
+Discussion points: predicted d/n and d/p ratios, interpretations in quark distributions, emc effects in deuterium
+
+
+  
+\begin{figure}[H]
+  \centering
+      	  \includegraphics[width=0.5\textwidth]{plots/dn_effects_theory.png}
+ 	 \caption[]{}
+  \label{fig:dn_theory}
+ \end{figure}  
+ 
+\begin{figure}[H]
+  \centering
+      	  \includegraphics[width=0.5\textwidth]{plots/deut_ratio_theory.png}
+ 	 \caption[]{}
+  \label{fig:deut_theory}
+ \end{figure}  
   
 \section{$F_2^n$ extraction and the CJ15 fit}
 
@@ -157,12 +177,17 @@ We need to point to CJ and how the world data was extracted.
   \label{fig:pd_CJ15}
 \end{figure} 
  
-\begin{figure}[H]
-  \centering
-      	  \includegraphics[width=0.5\textwidth]{plots/dpn_allCJ.png}
- 	 \caption[Deuteron structure function from CJ15]{The deuteron structure function divided by the sum of the free proton and free neutron structure functions from the CJ15 fit is shown for various $Q^2$. This ratio roughly shows the magnitude of the nuclear effects in the deuteron. The $Q^2$ dependence shows significant spread above $x_B=0.6$ where the ratio begins to increase.}
+ \begin{figure}
+\begin{minipage}{0.5\textwidth}
+ \includegraphics[width=\textwidth]{plots/dpn_allCJ.png}
+\end{minipage}\hfill\begin{minipage}{0.5\textwidth}
+ \includegraphics[width=\textwidth]{plots/deuterium_q2.png}
+ \end{minipage}
+  \caption[]{Left: The deuteron structure function divided by the sum of the free proton and free neutron structure functions from the CJ15 fit is shown for various $Q^2$. This ratio roughly shows the magnitude of the nuclear effects in the deuteron. The $Q^2$ dependence shows significant spread above $x_B=0.6$ where the ratio begins to increase. Right: The global Whitlow deuterium data from SLAC~\cite{XS_d} is shown divided by the sum of the free proton and free neutron structure functions from the CJ15 fit.}
   \label{fig:dpn_cj}
- \end{figure} 
+\end{figure}  
+ 
+ 
  
   \begin{figure}
 \begin{minipage}{0.5\textwidth}
@@ -221,46 +246,142 @@ f_{iso}^A = \dfrac{\dfrac{1}{2}(1+F_2^n/F_2^p)}{\dfrac{1}{A}(Z+(A-Z)F_2^n/F_2^p)
 
 \subsection{Deuterium}
 
-\begin{figure}[H]
-  \centering
-      	  \includegraphics[width=0.5\textwidth]{plots/deuterium_q2.png}
- 	 \caption[Deuterium data from SLAC]{The global Whitlow deuterium data from SLAC~\cite{XS_d} is shown divided by the sum of the free proton and free neutron structure functions from the CJ15 fit.}
-  \label{fig:d2_q2}
- \end{figure}
+
 
 plots: include d/n or n/d of Whitlow+BONUS to show Q2 dependency
 
 \subsection{Heavier nuclei}
 
-Include a table of the fit slopes with errors. Do we include fits for Q2=5 only? Then do we discuss the x larger than 0.6 (higher Q2) separately as an observation?
+
+  \begin{figure}
+\begin{minipage}{0.5\textwidth}
+ \includegraphics[width=\textwidth]{plots/q2_5/q2_5_D.png}
+\end{minipage}\hfill\begin{minipage}{0.5\textwidth}
+\includegraphics[width=\textwidth]{plots/q2_all_x_l7/q2_all_x_l7_D.png}
+\end{minipage}\hfill\begin{minipage}{0.5\textwidth}
+\includegraphics[width=\textwidth]{plots/q2_all_x_all/all_D.png}
+\end{minipage}
+  \caption[]{Linear fits to the deuterium target data with cuts on $Q^2$ and $x_B$.}
+  \label{fig:fits_D}
+\end{figure}  
+
+ \begin{figure}
+\begin{minipage}{0.5\textwidth}
+ \includegraphics[width=\textwidth]{plots/q2_5/q2_5_C.png}
+\end{minipage}\hfill\begin{minipage}{0.5\textwidth}
+\includegraphics[width=\textwidth]{plots/q2_all_x_l7/q2_all_x_l7_C.png}
+\end{minipage}\hfill\begin{minipage}{0.5\textwidth}
+\includegraphics[width=\textwidth]{plots/q2_all_x_all/all_C.png}
+\end{minipage}
+  \caption[]{Linear fits to the $C$ target data with cuts on $Q^2$ and $x_B$.}
+  \label{fig:fits_C}
+\end{figure}   
+
+ \begin{figure}
+\begin{minipage}{0.5\textwidth}
+ \includegraphics[width=\textwidth]{plots/q2_5/q2_5_Au.png}
+\end{minipage}\hfill\begin{minipage}{0.5\textwidth}
+\includegraphics[width=\textwidth]{plots/q2_all_x_l7/q2_all_x_l7_Au.png}
+\end{minipage}\hfill\begin{minipage}{0.5\textwidth}
+\includegraphics[width=\textwidth]{plots/q2_all_x_all/all_Au.png}
+\end{minipage}
+  \caption[]{Linear fits to the $Au$ target data with cuts on $Q^2$ and $x_B$.}
+  \label{fig:fits_Au}
+\end{figure}   
 
 \begin{table}[htb!]
-\caption{\label{SlopeFits} Summary of linear fits to $x_B$.}
+\caption{\label{SlopeFits} Summary of linear fits to $x_B$ where $Q^2=5$.}
 \centering
 \begin{tabular}{ | C{2.5cm} | C{2cm} | C{2cm} | C{2cm} | C{2cm} | }
  \hline
  \textbf{Nucleus} & \textbf{A/d slope} & \textbf{A/d intercept} & \textbf{A/(n+p) slope} & \textbf{A/(n+p) intercept} \\ 
   \hline
-%HB & $6.485E-03$ & $0.003$ & v6 & v6 & 0.983 \\ 
-  %\hline
- % Q1 & $7.103E-03$ & $0.004$ & v0-v2, v6 & v0-v2 & 0.983$\times$0.97 \\ 
-  %\hline
-  % Q2 & $9.436E-03$ & $0.003$ & -- & -- & 0.983$\times$0.96 \\ 
-  %\hline
-  % Q3 & $9.728E-03$ & $0.004$ & v0-v2 & -- & 0.983$\times$0.97 \\ 
-  %\hline
-   % dipole & $1.184E-02$ & $3.188e-03$ & v0-v5 & -- & 0.983 \\ 
+deuterium & 0.034078+/-0.013514	& 0.963954+/-0.007694 & 0.131192+/-0.028952 &	0.893476+/-0.013877 \\ 
   \hline
+  He4 & -0.139559+/-0.041514	 & 1.010444+/-0.023729 & -0.054561+/-0.053741 & 0.947196+/-0.027083 \\ 
+ \hline
+ Be & -0.153575+/-0.004225	 &1.020754+/-0.002375 &-0.064459+/-0.041653&	0.955925+/-0.020121\\ 
+  \hline
+   C & -0.310100+/-0.010935	& 1.081424+/-0.006245 & -0.230690+/-0.044742	&1.022234+/-0.022572  \\ 
+  \hline
+    Al &-0.308688+/-0.058075 &	1.074479+/-0.032618 & -0.241920+/-0.085474 &	1.021834+/-0.042052 \\ 
+  \hline
+ Ca &-0.327402+/-0.048885 &	1.085172+/-0.027035 & -0.27227+/-0.051774 &	1.037505+/-0.025103 \\ 
+  \hline  
+  Fe & -0.368335+/-0.041561&	1.085849+/-0.022646& -0.286425+/-0.062250 &	1.024809+/-0.029771 \\ 
+  \hline 
+  Ag & -0.423013+/-0.087616 &	1.119710+/-0.048607 & -0.360732+/-0.113255	& 1.068858+/-0.055132 \\ 
+  \hline 
+   Au & -0.456231+/-0.083041	&1.098650+/-0.045601 & -0.344872+/-0.063026 &	1.023289+/-0.030740\\ 
+  \hline 
     \end{tabular}
 \end{table} 
 
 
+\begin{table}[htb!]
+\caption{\label{SlopeFits1} Summary of linear fits to $x_B$ where $Q^2=5-15$ and $x_B<0.7$.}
+\centering
+\begin{tabular}{ | C{2.5cm} | C{2cm} | C{2cm} | C{2cm} | C{2cm} | }
+ \hline
+ \textbf{Nucleus} & \textbf{A/d slope} & \textbf{A/d intercept} & \textbf{A/(n+p) slope} & \textbf{A/(n+p) intercept} \\ 
+  \hline
+deuterium & 0.021260+/-0.020875 &	0.974781+/-0.011910 & 0.150795+/-0.039755	& 0.894508+/-0.019402 \\ 
+  \hline
+  He4 &-0.118090+/-0.035769 &	0.997067+/-0.020596 & -0.016222+/-0.045129 &	0.931353+/-0.023103 \\ 
+ \hline
+ Be &-0.197454+/-0.083778 &	1.035493+/-0.048067 &-0.059106+/-0.030303 &	0.953386+/-0.015144\\ 
+  \hline
+   C &-0.312985+/-0.011614	&1.082614+/-0.006717 & -0.216581+/-0.043641	&1.016811+/-0.022474 \\ 
+  \hline
+    Al &-0.298244+/-0.057500	&1.070859+/-0.032829 & -0.210889+/-0.056564	&1.010775+/-0.028368 \\ 
+  \hline
+ Ca &-0.334267+/-0.034303&	1.088128+/-0.019560 & -0.247045+/-0.051788 &	1.027656+/-0.025990 \\ 
+  \hline  
+  Fe & -0.379082+/-0.040058	&1.085956+/-0.022621& -0.257315+/-0.043599 &	1.010276+/-0.021402 \\ 
+  \hline 
+  Ag &-0.432939+/-0.060259&	1.124006+/-0.034442 & -0.338549+/-0.081071	&1.060178+/-0.040839 \\ 
+  \hline 
+   Au & -0.416652+/-0.073092&	1.076493+/-0.041418 & -0.318705+/-0.065007&	1.012124+/-0.032502\\ 
+  \hline 
+    \end{tabular}
+\end{table} 
+
+\begin{table}[htb!]
+\caption{\label{SlopeFits2} Summary of linear fits to $x_B$ where $Q^2=5-15$ and $x_B<0.8$.}
+\centering
+\begin{tabular}{ | C{2.5cm} | C{2cm} | C{2cm} | C{2cm} | C{2cm} | }
+ \hline
+ \textbf{Nucleus} & \textbf{A/d slope} & \textbf{A/d intercept} & \textbf{A/(n+p) slope} & \textbf{A/(n+p) intercept} \\ 
+  \hline
+deuterium & -0.047904+/-0.020441	&1.011339+/-0.013123& 0.173649+/-0.034450	&0.885021+/-0.017643 \\ 
+  \hline
+  He4 &-0.066610+/-0.025529&	0.969128+/-0.015975 & 0.024671+/-0.050676&	0.913125+/-0.026599 \\ 
+ \hline
+ Be &-0.105347+/-0.056027&	0.986067+/-0.035211 &-0.016830+/-0.042937&	0.934997+/-0.022080\\ 
+  \hline
+   C &---&--- & ---	&--- \\ 
+  \hline
+    Al &-0.268256+/-0.036285	&1.054884+/-0.022384&-0.178675+/-0.057032&	0.996550+/-0.029163 \\ 
+  \hline
+ Ca &---&--- & ---	&--- \\ 
+  \hline  
+  Fe &-0.265522+/-0.041894	&1.026296+/-0.025600&-0.219929+/-0.048613	&0.994104+/-0.024310\\ 
+  \hline 
+  Ag &---&--- & ---	&---  \\ 
+  \hline 
+   Au & -0.309382+/-0.053346 &	1.019493+/-0.032947 & -0.272132+/-0.066892 &	0.991273+/-0.034131\\ 
+  \hline 
+    \end{tabular}
+\end{table} 
 
 
 \section{Conclusions}
-n and p have Q2 dependence and deuterium is not so linear. 
-
-
+%n and p have Q2 dependence and deuterium is not so linear. 
+%- There is a significantly more pronounced A dependence to the A/n data as a function of x as compared to the A/p (associated with the drop in n/p as a function of x)
+%- d/(n+p) has some Q^2 dependence 
+%- d/(n+p) has some x dependence
+%- Because of the point above, the EMC effect, particularly as calculated using the slope of the A/d ratios, is in part due to nuclear effects within the deuteron alone
+%- Because of the three points above, the EMC effect, particularly as calculated using the slope of the A/d ratios, has an x and Q^2 dependence
 
 \section{Acknowledgments}
 
@@ -317,26 +438,6 @@ The authors would like to thank Shujie Li for constructing the most complete wor
 
 %----------------------------------------------------------------------------------------
 
-%\begin{table}[htb!]
-%\caption{\label{MagnetFactors} Progression of the field setting model for data-taking.}
-%\centering
-%\begin{tabular}{ | C{2.5cm} | C{2cm} | C{2cm} | C{2cm} | C{2cm} | C{2cm} | }
- %\hline
- %\textbf{Magnet} & \textbf{$B/I_{V0}$~[kG/A]} & \textbf{$P/I_{V0}$}~[kG/A] & \textbf{$B/I$ sat model?} & \textbf{$L_{eff}$ sat model?}  & \textbf{$P/I$ v6 factor} \\ 
-  %\hline
-% HB & $6.485E-03$ & $0.003$ & v6 & v6 & 0.983 \\ 
-  %\hline
- % Q1 & $7.103E-03$ & $0.004$ & v0-v2, v6 & v0-v2 & 0.983$\times$0.97 \\ 
-  %\hline
-  % Q2 & $9.436E-03$ & $0.003$ & -- & -- & 0.983$\times$0.96 \\ 
-  %\hline
-  % Q3 & $9.728E-03$ & $0.004$ & v0-v2 & -- & 0.983$\times$0.97 \\ 
-  %\hline
-   % dipole & $1.184E-02$ & $3.188e-03$ & v0-v5 & -- & 0.983 \\ 
- % \hline
-   % \end{tabular}
-%\end{table} 
-
 %\begin{description}
 %\item[$\bullet$ Version 1] Applied on December 11, 2017 at 4:21~am starting with SHMS run 1605. All quads are scaled by a factor of 1.05 times their nominal setting. The HB and dipole are not modified~\cite{V1_holly}.
 %\item[$\bullet$ Version 2] Applied on December 19, 2017 at 9:06~am starting with SHMS run 1655. The original 1.05 scale factor for the quads is removed and modified to be: Q1 at 1.03, Q2 at 1.04, Q3 at 1.03~\cite{V2_holly}.
@@ -344,5 +445,112 @@ The authors would like to thank Shujie Li for constructing the most complete wor
 %\item[$\bullet$ Version 4 and 5] Applied on August 14, 2018 at 6:14~pm starting with SHMS run 4432, HMS run 2347, and coincidence run 4436. All SHMS magnets (HB, Q1, Q2, Q3, dipole) and scaled up by a factor of 1/0.983 from the commissioning studies in order to better match the desired central momentum setting~\cite{V4_holly}. Additionally, any non-linear dipole modeling behavior is removed. 
 %\item[$\bullet$ Version 6] Applied on September 29, 2018 at 5:06~pm starting with coincidence run 4780. A saturation model for Q1 is applied at 6~GeV and above: $1/(-0.00077P^2+0.0132P+0.94938)$. This was not studied above 8.035~GeV central momentum and uses a constant value at and above 8.035~GeV from the equation. 
 %\end{description}
+
+\section{Appendix}
+\begin{figure}[H]
+\begin{minipage}{0.5\textwidth}
+ \includegraphics[width=\textwidth]{plots/q2_5/q2_5_He.png}
+\end{minipage}\hfill\begin{minipage}{0.5\textwidth}
+\includegraphics[width=\textwidth]{plots/q2_all_x_l7/q2_all_x_l7_He.png}
+\end{minipage}\hfill\begin{minipage}{0.5\textwidth}
+\includegraphics[width=\textwidth]{plots/q2_all_x_all/all_He.png}
+\end{minipage}
+  \caption[]{Linear fits to the $He$ target data with cuts on $Q^2$ and $x_B$.}
+  \label{fig:fits_He}
+\end{figure}   
+
+ \begin{figure}[H]
+\begin{minipage}{0.5\textwidth}
+ \includegraphics[width=\textwidth]{plots/q2_5/q2_5_Be.png}
+\end{minipage}\hfill\begin{minipage}{0.5\textwidth}
+\includegraphics[width=\textwidth]{plots/q2_all_x_l7/q2_all_x_l7_Be.png}
+\end{minipage}\hfill\begin{minipage}{0.5\textwidth}
+\includegraphics[width=\textwidth]{plots/q2_all_x_all/all_Be.png}
+\end{minipage}
+  \caption[]{Linear fits to the $Be$ target data with cuts on $Q^2$ and $x_B$.}
+  \label{fig:fits_Be}
+\end{figure}   
+
+
+ \begin{figure}[H]
+\begin{minipage}{0.5\textwidth}
+ \includegraphics[width=\textwidth]{plots/q2_5/q2_5_Al.png}
+\end{minipage}\hfill\begin{minipage}{0.5\textwidth}
+\includegraphics[width=\textwidth]{plots/q2_all_x_l7/q2_all_x_l7_Al.png}
+\end{minipage}\hfill\begin{minipage}{0.5\textwidth}
+\includegraphics[width=\textwidth]{plots/q2_all_x_all/all_Al.png}
+\end{minipage}
+  \caption[]{Linear fits to the $Al$ target data with cuts on $Q^2$ and $x_B$.}
+  \label{fig:fits_Al}
+\end{figure}   
+
+
+ \begin{figure}[H]
+\begin{minipage}{0.5\textwidth}
+ \includegraphics[width=\textwidth]{plots/q2_5/q2_5_Ca.png}
+\end{minipage}\hfill\begin{minipage}{0.5\textwidth}
+\includegraphics[width=\textwidth]{plots/q2_all_x_l7/q2_all_x_l7_Ca.png}
+\end{minipage}\hfill\begin{minipage}{0.5\textwidth}
+\includegraphics[width=\textwidth]{plots/q2_all_x_all/all_Ca.png}
+\end{minipage}
+  \caption[]{Linear fits to the $Ca$ target data with cuts on $Q^2$ and $x_B$.}
+  \label{fig:fits_Ca}
+\end{figure}   
+
+ \begin{figure}[H]
+\begin{minipage}{0.5\textwidth}
+ \includegraphics[width=\textwidth]{plots/q2_5/q2_5_Fe.png}
+\end{minipage}\hfill\begin{minipage}{0.5\textwidth}
+\includegraphics[width=\textwidth]{plots/q2_all_x_l7/q2_all_x_l7_Fe.png}
+\end{minipage}\hfill\begin{minipage}{0.5\textwidth}
+\includegraphics[width=\textwidth]{plots/q2_all_x_all/all_Fe.png}
+\end{minipage}
+  \caption[]{Linear fits to the $Fe$ target data with cuts on $Q^2$ and $x_B$.}
+  \label{fig:fits_Fe}
+\end{figure}   
+
+ \begin{figure}[H]
+\begin{minipage}{0.5\textwidth}
+ \includegraphics[width=\textwidth]{plots/q2_5/q2_5_Ag.png}
+\end{minipage}\hfill\begin{minipage}{0.5\textwidth}
+\includegraphics[width=\textwidth]{plots/q2_all_x_l7/q2_all_x_l7_Ag.png}
+\end{minipage}\hfill\begin{minipage}{0.5\textwidth}
+\includegraphics[width=\textwidth]{plots/q2_all_x_all/all_Ag.png}
+\end{minipage}
+  \caption[]{Linear fits to the $Ag$ target data with cuts on $Q^2$ and $x_B$.}
+  \label{fig:fits_Ag}
+\end{figure}   
+
+\begin{figure}[H]
+\begin{minipage}{0.5\textwidth}
+      	  \includegraphics[width=\textwidth]{plots/a2SRC.png}
+      	  \end{minipage}\hfill\begin{minipage}{0.5\textwidth}
+      	        	  \includegraphics[width=\textwidth]{plots/a2SRCfixed.png}
+\end{minipage}
+ 	 \caption[]{}
+  \label{fig:a2_src}
+ \end{figure}
+ 
+  \begin{figure}[H]
+\begin{minipage}{0.5\textwidth}
+ \includegraphics[width=\textwidth]{plots/plotsvA/Aslope_q5.png}
+\end{minipage}\hfill\begin{minipage}{0.5\textwidth}
+\includegraphics[width=\textwidth]{plots/plotsvA/Aslope_l7.png}
+\end{minipage}\hfill\begin{minipage}{0.5\textwidth}
+\includegraphics[width=\textwidth]{plots/plotsvA/Aslope_all.png}
+\end{minipage}
+  \caption[]{.}
+  \label{fig:Aslope_summary}
+\end{figure}   
+
+\begin{figure}[H]
+\begin{minipage}{0.5\textwidth}
+ \includegraphics[width=\textwidth]{plots/plotsvA/Aslope_ad.png}
+\end{minipage}\hfill\begin{minipage}{0.5\textwidth}
+\includegraphics[width=\textwidth]{plots/plotsvA/Aslope_free.png}
+\end{minipage}
+  \caption[]{.}
+  \label{fig:Aslope_compare}
+\end{figure}   
 
 \end{document}
