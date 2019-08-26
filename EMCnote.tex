@@ -140,14 +140,14 @@ Discussion points: predicted d/n and d/p ratios, interpretations in quark distri
 \begin{figure}[H]
   \centering
       	  \includegraphics[width=0.5\textwidth]{plots/dn_effects_theory.png}
- 	 \caption[]{}
+ 	 \caption[Theoretical extraction of the ratio of $F_2^d/F_2^N$]{The theoretical extraction of the ratio of $F_2^d/F_2^N$. The deuteron exhibits some $x_B$-dependence such that the ratio is modified by approximately 2$\%$ in the regime of $x_B$ between 0.3--0.7 (region of interest to the EMC Effect).}
   \label{fig:dn_theory}
  \end{figure}  
  
 \begin{figure}[H]
   \centering
       	  \includegraphics[width=0.5\textwidth]{plots/deut_ratio_theory.png}
- 	 \caption[]{}
+ 	 \caption[Theoretically-derived deuteron $F_2$ ratios with respect to the free nucleons]{Theoretically-derived deuteron $F_2$ ratios with respect to the free neutron and proton, the free proton, and the free neutron are shown for $Q^2=5$.}
   \label{fig:deut_theory}
  \end{figure}  
   
@@ -201,26 +201,30 @@ We need to point to CJ and how the world data was extracted.
 
 \section{Structure function extraction from the E139 cross sections}
 
-Discuss the input cross section, conversion to F2A and the iso-scalar correction.
-
-
+Most experiments officially publish the extracted $F_2$ ratios. For this analysis, the experimental cross sections were desirable for the flexibility to construct and study the $F_2$ ratios for the nucleus of interest relative to various free nucleon quantities. The SLAC E139 experiment published the experimental cross sections for the following nuclei: deuterium, helium, beryllium, carbon, aluminum, calcium, iron, silver and gold. The cross sections include published statistical and systematic errors. The $F_2$ structure function for each nucleus is extracted from the cross section using the relationship shown in Equation~\eqref{eq:f2eqn}.
 
 \begin{equation}
 F_2 = \dfrac{d^2\sigma}{d\Omega dE'}\dfrac{1+R}{1+\epsilon R}\dfrac{K\nu}{4\pi^2\alpha\Gamma (1+\nu^2/Q^2)}
-\label{eq:matrixelements}
+\label{eq:f2eqn}
 \end{equation}
+
+From Equation~\eqref{eq:f2eqn}, $\epsilon$, $K$, and $\Gamma$ are defined by the usual quantities of the electron scattering kinematics in Equation~\eqref{eq:f2eqndetails}. These quantities include the measured scattering angle $\theta$, the momentum transfer $Q^2$, the energy transfer $\nu$, the scattered electron energy $E'$, the mass of the proton $M$, and the squared invariant mass $W^2$.
 
 \begin{align}
 \epsilon=&(1+2\dfrac{\nu^2+Q^2}{Q^2}tan^2\dfrac{\theta}{2})^{-1}\\
 K=&\dfrac{W^2-M^2}{2M}\\
 \Gamma=&\dfrac{\alpha KE'}{2\pi^2Q^2E(1-\epsilon)}
-\label{eq:matrixeqn}
+\label{eq:f2eqndetails}
 \end{align}
+
+For most published cross section ratios, corrections are applied to account for the excess of neutrons in asymmetric nuclei. This correction is referred to as the ``isoscalar correction" and is defined in Equation~\eqref{eq:isocorr}. While this correction is not applied in this paper for the $F_2$ ratios per free proton and free neutron, it is relevant for accurately reconstructing the published $F_2^A$/$F_2^d$ cross sections as in most analyses. 
 
 \begin{equation}
 f_{iso}^A = \dfrac{\dfrac{1}{2}(1+F_2^n/F_2^p)}{\dfrac{1}{A}(Z+(A-Z)F_2^n/F_2^p)}
-\label{eq:matrixelements}
+\label{eq:isocorr}
 \end{equation}
+
+From the analysis described in this section, the carbon and gold $F_2^A/F_2^d$ ratios are reconstructed (with the iso-scalar correction applied to gold) and compared to the published ratios in the EMC and NMC experiments as shown in Fig.~\ref{fig:emc_ratios}.
 
 \begin{figure}[H]
   \centering
@@ -228,6 +232,8 @@ f_{iso}^A = \dfrac{\dfrac{1}{2}(1+F_2^n/F_2^p)}{\dfrac{1}{A}(Z+(A-Z)F_2^n/F_2^p)
  	 \caption[EMC ratios for various data]{The published structure function ratios per nucleon for carbon and gold are shown from SLAC, NMC, and the EMC experiments.}
   \label{fig:emc_ratios}
  \end{figure}
+ 
+ The carbon ratio from the SLAC E139 experiment is consistent with the ratio found in the EMC and NMC experiments, and the carbon exhibits a shallower slope with respect to $x_B$ as compared to the heavier, iso-scalar corrected gold ratio. 
 
 \section{General observations}
  
