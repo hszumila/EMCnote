@@ -12,6 +12,12 @@
 % License:
 % CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
 %
+%TODO: references and bibliography, theory section, CJ section, intro
+% Which SRC values to use? I used original a2 predicted values...
+%
+%
+%
+%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %----------------------------------------------------------------------------------------
@@ -117,12 +123,7 @@ The persistently mysterious deviations from unity of the ratio of nuclear target
 
 \section{Introduction}
 
-The EMC Effect
-
-
-
-We chose to use the SLAC E139 data set because it is the most complete published list of cross sections available. From the initial cross sections given, we converted the absolute cross section to the structure function by using the kinematics and R1990 fitting. 
-
+Deep inelastic scattering experiments 
 
 \begin{figure}[H]
   \centering
@@ -147,13 +148,15 @@ Discussion points: predicted d/n and d/p ratios, interpretations in quark distri
 \begin{figure}[H]
   \centering
       	  \includegraphics[width=0.5\textwidth]{plots/deut_ratio_theory.png}
- 	 \caption[Theoretically-derived deuteron $F_2$ ratios with respect to the free nucleons]{Theoretically-derived deuteron $F_2$ ratios with respect to the free neutron and proton, the free proton, and the free neutron are shown for $Q^2=5$.}
+ 	 \caption[Theoretically-derived deuteron $F_2$ ratios with respect to the free nucleons]{Theoretically-derived deuteron $F_2$ ratios with respect to the free neutron and proton, the free proton, and the free neutron are shown for $Q^2=5$ GeV$^2$.}
   \label{fig:deut_theory}
  \end{figure}  
   
 \section{$F_2^n$ extraction and the CJ15 fit}
 
-We need to point to CJ and how the world data was extracted. 
+Recent work by the CTEQ-Jefferson Lab (CJ) Collaboration reviewed the world DIS data on the proton and deuteron structure functions and extracted the free neutron structure function over the full range of kinematics. Through the application of the latest and best known deuteron nuclear corrections, the full global DIS data set provides the equivalent neutron data set. This extracted free neutron structure function enables the authors of this paper to examine the EMC Effect in a new way. 
+
+In Fig.~\ref{fig:F2np_general}, general comparisons of the newly extract $F_2^n$ are made with respect to the $F_2^p$ as derived by the NMC fit. 
 
  \begin{figure}
 \begin{minipage}{0.5\textwidth}
@@ -164,8 +167,12 @@ We need to point to CJ and how the world data was extracted.
   \caption[$F_2^{n,p}$ characteristics]{Left: The extracted $F_2^n$ from the world DIS data is shown in blue, and the $F_2^p$ from the NMC global fit is shown in red for the same corresponding $x_B$ and $Q^2$. Right: The ratio of the $F_2^n/F_2^p$ from the left is shown as a function of $x_B$.}
   \label{fig:F2np_general}
 \end{figure} 
+
+On the left of Fig.~\ref{fig:F2np_general}, the $F_2^n$ and $F_2^p$ for the same $x_B$ and $Q^2$ kinematics is shown. The $F_2^n$ in blue is the extracted points from the world data, and the $F_2^p$ is the corresponding value (for the same kinematics) from the NMC fit. The overall $x_B$ dependence is somewhat different as the neutron structure function is more comparable at larger $x_B$ while the proton structure function drops off more sharply. The ratio of these quantities is shown on the right in Fig.~\ref{fig:F2np_general} and agrees with previously extracted results. %%%%Insert references here!!
  
 \subsection{$Q^2$ dependence}
+
+A significant observation in the CJ15-extracted structure functions is the $Q^2$ dependence. The proton structure function is shown on the left in Fig.~\ref{fig:pd_CJ15} for various $Q^2$ from the CJ15 fit to the world DIS data. The corresponding deuteron structure function is shown on the right in Fig.~\ref{fig:pd_CJ15}. The SLAC E139 experiment took measurements at $Q^2$ in the range of 5--15 GeV$^2$. The proton and deuteron structure functions both show clear differences for the same values of $x_B$ over this range of $Q^2$. 
 
 \begin{figure}
 \begin{minipage}{0.5\textwidth}
@@ -177,6 +184,8 @@ We need to point to CJ and how the world data was extracted.
   \label{fig:pd_CJ15}
 \end{figure} 
  
+The nuclear effects of the proton and neutron in the deuteron can be directly characterized by dividing the deuteron structure function by the sum of the free proton and free neutron structure functions. The result is shown on the left in Fig.~\ref{fig:dpn_cj}. Over the typical range of $x_B$ that is relevant to the EMC Effect, the $Q^2$ dependence is minimal. At approximately $x_B=0.6$ and greater, the ratio varies greatly with $Q^2$.  
+ 
  \begin{figure}
 \begin{minipage}{0.5\textwidth}
  \includegraphics[width=\textwidth]{plots/dpn_allCJ.png}
@@ -187,7 +196,7 @@ We need to point to CJ and how the world data was extracted.
   \label{fig:dpn_cj}
 \end{figure}  
  
- 
+The same ratio is shown on the right in Fig.~\ref{fig:dpn_cj} using the global Whitlow deuterium data. The same general trend is observed as that shown in the CJ15 where the $Q^2$ has a more significant effect on the ratio at large values of $x_B$. The $F_2^d/F_2^p$ and $F_2^d/F_2^n$ ratios from the CJ15 fit are shown in Fig.~\ref{fig:dratio_cj}. 
  
   \begin{figure}
 \begin{minipage}{0.5\textwidth}
@@ -199,16 +208,18 @@ We need to point to CJ and how the world data was extracted.
   \label{fig:dratio_cj}
 \end{figure} 
 
+The significance of the spread in ratios at large $x_B$ values is that many experiments, SLAC E139 included, did not observe a large $Q^2$ dependence in the data and so the points were averaged in $Q^2$ for each point in $x_B$. Additionally, the EMC Effect is characterized by a linear fit in the range of $x_B$ from 0.3--0.7 where deuterium clearly exhibits non-linear nuclear modification effects. These two observations affect the interpretation and extraction of the EMC Effect. 
+
 \section{Structure function extraction from the E139 cross sections}
 
-Most experiments officially publish the extracted $F_2$ ratios. For this analysis, the experimental cross sections were desirable for the flexibility to construct and study the $F_2$ ratios for the nucleus of interest relative to various free nucleon quantities. The SLAC E139 experiment published the experimental cross sections for the following nuclei: deuterium, helium, beryllium, carbon, aluminum, calcium, iron, silver and gold. The cross sections include published statistical and systematic errors. The $F_2$ structure function for each nucleus is extracted from the cross section using the relationship shown in Equation~\eqref{eq:f2eqn}.
+Most experiments only publish the extracted $F_2$ ratios. For this analysis, the experimental cross sections were desirable for the flexibility to construct and study the $F_2$ ratios for the nucleus of interest relative to free nucleon quantities. The SLAC E139 experiment published the experimental cross sections for the following nuclei: deuterium, helium, beryllium, carbon, aluminum, calcium, iron, silver and gold. The cross sections include published statistical and systematic errors. The $F_2$ structure function for each nucleus is extracted from the cross section using the relationship shown in Equation~\eqref{eq:f2eqn}.
 
 \begin{equation}
 F_2 = \dfrac{d^2\sigma}{d\Omega dE'}\dfrac{1+R}{1+\epsilon R}\dfrac{K\nu}{4\pi^2\alpha\Gamma (1+\nu^2/Q^2)}
 \label{eq:f2eqn}
 \end{equation}
 
-From Equation~\eqref{eq:f2eqn}, $\epsilon$, $K$, and $\Gamma$ are defined by the usual quantities of the electron scattering kinematics in Equation~\eqref{eq:f2eqndetails}. These quantities include the measured scattering angle $\theta$, the momentum transfer $Q^2$, the energy transfer $\nu$, the scattered electron energy $E'$, the mass of the proton $M$, and the squared invariant mass $W^2$.
+From Equation~\eqref{eq:f2eqn}, $\epsilon$, $K$, and $\Gamma$ are defined by the usual quantities of the electron scattering kinematics in Equation~\eqref{eq:f2eqndetails}. These quantities include the measured scattering angle $\theta$, the momentum transfer $Q^2$, the energy transfer $\nu$, the scattered electron energy $E'$, the mass of the proton $M$, and the squared invariant mass $W^2$. $R$ is determined from the R1990 fit to world data.
 
 \begin{align}
 \epsilon=&(1+2\dfrac{\nu^2+Q^2}{Q^2}tan^2\dfrac{\theta}{2})^{-1}\\
@@ -236,6 +247,8 @@ From the analysis described in this section, the carbon and gold $F_2^A/F_2^d$ r
  The carbon ratio from the SLAC E139 experiment is consistent with the ratio found in the EMC and NMC experiments, and the carbon exhibits a shallower slope with respect to $x_B$ as compared to the heavier, iso-scalar corrected gold ratio. 
 
 \section{General observations}
+
+The standard EMC structure function ratio is compared with ratios of the structure function of the nucleus to that of the free proton and free neutron, separately. The $F_2^A/F_2^d$ ratios for the carbon and gold nuclei are shown in Fig.~\ref{fig:data_np_ratio} using the collective world data as published in Ref.~\ref{Malace:2014uea}. The gold nucleus (heavier than carbon) exhibits a steeper slope as a standard observation of the EMC Effect. The $F_2^A/AF_2^p$ ratio is the per nucleon ratio to the proton structure function and is also shown in Fig.~\ref{fig:data_np_ratio}. These ratios are consistent with theory predictions and exhibit a similar trend to the ratio of the structure function to deuterium in that the slope steepens for heavier nuclei. The vertical spread in the ratios of the various nuclei lessens when an iso-scalar correction is applied. The $F_2^p$ structure function is obtained from the CJ15 fit.      
  
   \begin{figure}
 \begin{minipage}{0.5\textwidth}
@@ -247,19 +260,14 @@ From the analysis described in this section, the carbon and gold $F_2^A/F_2^d$ r
   \label{fig:data_np_ratio}
 \end{figure}  
  
+The $F_2^A/AF_2^n$ ratio is the per nucleon to the free neutron. The free neutron $F_2^n$ is from the CJ15 fit to the world data. As shown in Fig.~\ref{fig:data_np_ratio}, the $F_2^A/AF_2^n$ ratios for the SLAC E139 nuclei exhibit a significantly larger vertical spread when compared to the vertical spread of the $F_2^A/AF_2^p$ ratios for various nuclei. The  $F_2^A/AF_2^n$ ratios also exhibit a positive slope in contrast to the ratios constructed using the free proton. These observations are further magnified on the right in Fig.~\ref{fig:data_np_ratio} where the ratios for each nuclei are shown as per proton ($F_2^A/ZF_2^p$) and per neutron ($F_2^A/NF_2^n$). 
  
 \section{Deuterium nuclear effects and heavier nuclei}
-
 \subsection{Deuterium}
+%plots: include d/n or n/d of Whitlow+BONUS to show Q2 dependency
+The nuclear effects in deuterium are non-negligible for values of $x_B$ from 0.3--0.7 in the region of interest to the EMC Effect. The nuclear effects in deuterium can be quantified somewhat as the difference between the sum of the free proton and free neutron to that of the measured deuterium structure function. In Fig.~\ref{fig:fits_D}, the $F_2^A$ ratio is defined in two ways: the standard $F_2^A/F_2^d$ (shown in blue) and $F_2^A/ZF_2^p+(A-Z)F_2^n$ (shown in red). The SLAC E139 data was taken for $Q^2$ of 5, 10, and 15 GeV$^2$.
 
-
-
-plots: include d/n or n/d of Whitlow+BONUS to show Q2 dependency
-
-\subsection{Heavier nuclei}
-
-
-  \begin{figure}
+ \begin{figure}
 \begin{minipage}{0.5\textwidth}
  \includegraphics[width=\textwidth]{plots/q2_5/q2_5_D.png}
 \end{minipage}\hfill\begin{minipage}{0.5\textwidth}
@@ -267,21 +275,29 @@ plots: include d/n or n/d of Whitlow+BONUS to show Q2 dependency
 \end{minipage}\hfill\begin{minipage}{0.5\textwidth}
 \includegraphics[width=\textwidth]{plots/q2_all_x_all/all_D.png}
 \end{minipage}
-  \caption[]{Linear fits to the deuterium target data with cuts on $Q^2$ and $x_B$.}
+  \caption[]{Linear fits to the deuterium target data with cuts on $Q^2$ and $x_B$. The blue data shows the ratio of the E139 nucleus relative to the CJ15 deuterium while the red data shows the ratio of the E139 nucleus relative to the sum of the free proton and free neutron (excluding nuclear effects of deuterium). Top left: linear fit to the data taken for $Q^2=5$ GeV$^2$. Top Right: linear fit to the data taken for all $Q^2$ but excluding the data at $x_B=0.7$. Bottom: linear fit to all data taken through $x_B=0.7$.}
   \label{fig:fits_D}
 \end{figure}  
+
+In Fig.~\ref{fig:fits_D}, the deuterium ratios from the SLAC E139 data are shown using the CJ15 structure function constructs in the denominators. The different $Q^2$ data are shown using different shapes in each plot, and fits to the ratios are taken separately including and excluding the highest $x_B$ point at 0.7. There is a systematic offset from unity for deuterium taken as a ratio to itself, but the ratio is relatively flat across $x_B$. There exists a clear difference between the ratio taken relative to the deuteron structure function (blue) and the ratio taken relative to sum of the free neutron and free proton structure functions (red). The difference also exhibits a small spread in $Q^2$.  
+
+\subsection{Heavier nuclei}
+
+The ratios for all the target nuclei in the SLAC E139 experiment are compared where the denominator is deuterium and the denominator is the sum of the free proton and neutron contributions. Carbon is a symmetric nucleus, and the results are shown in Fig.~\ref{fig:fits_C}. 
 
  \begin{figure}
 \begin{minipage}{0.5\textwidth}
  \includegraphics[width=\textwidth]{plots/q2_5/q2_5_C.png}
 \end{minipage}\hfill\begin{minipage}{0.5\textwidth}
 \includegraphics[width=\textwidth]{plots/q2_all_x_l7/q2_all_x_l7_C.png}
-\end{minipage}\hfill\begin{minipage}{0.5\textwidth}
-\includegraphics[width=\textwidth]{plots/q2_all_x_all/all_C.png}
+%\end{minipage}\hfill\begin{minipage}{0.5\textwidth}
+%\includegraphics[width=\textwidth]{plots/q2_all_x_all/all_C.png}
 \end{minipage}
-  \caption[]{Linear fits to the $C$ target data with cuts on $Q^2$ and $x_B$.}
+  \caption[]{Linear fits to the $C$ target data with cuts on $Q^2$ and $x_B$. The blue data shows the ratio of the nucleus relative to deuterium while the red data shows the ratio of the nucleus relative to the sum of the free proton and free neutron (excluding nuclear effects of deuterium). Left: linear fit to the data taken for $Q^2=5$ GeV$^2$. Right: linear fit to the data taken for all $Q^2$ but excluding the data at $x_B=0.7$. No data was taken in the E139 experiment for carbon at $x_B=0.7$.}
   \label{fig:fits_C}
 \end{figure}   
+
+No data was taken in the E139 experiment for carbon at $x_B>0.6$. The slope is steeper for the ratio taken with respect to the sum of the free neutron and free proton components. A more extreme case is seen in the gold nucleus in Fig.~\ref{fig:fits_Au}. 
 
  \begin{figure}
 \begin{minipage}{0.5\textwidth}
@@ -291,9 +307,37 @@ plots: include d/n or n/d of Whitlow+BONUS to show Q2 dependency
 \end{minipage}\hfill\begin{minipage}{0.5\textwidth}
 \includegraphics[width=\textwidth]{plots/q2_all_x_all/all_Au.png}
 \end{minipage}
-  \caption[]{Linear fits to the $Au$ target data with cuts on $Q^2$ and $x_B$.}
+  \caption[]{Linear fits to the $Au$ target data with cuts on $Q^2$ and $x_B$. The blue data shows the ratio of the nucleus relative to deuterium while the red data shows the ratio of the nucleus relative to the sum of the free proton and free neutron (excluding nuclear effects of deuterium). Top left: linear fit to the data taken for $Q^2=5$ GeV$^2$. Top Right: linear fit to the data taken for all $Q^2$ but excluding the data at $x_B=0.7$. Bottom: linear fit to all data taken through $x_B=0.7$.}
   \label{fig:fits_Au}
 \end{figure}   
+
+For the gold nucleus, the slope of the fit the ratio taken with respect to the free neutron and free proton is shallower than the slope taken with respect to deuterium (as consistent with the general trend observed in carbon). When data is fitted for a range of $Q^2$ values, a noticeable striping at each point in $x_B$ is apparent. Furthermore, the higher $x_B$ data (also higher $Q^2$), no longer sit linearly with respect to the lower $x_B$ data. In all nuclei (see Appendix), this discrepancy is most apparent for values of $x_B$ at 0.7. This observation is similar to where one would expect to see the contributions from the deuteron nuclear effects as shown in Fig.~\ref{fig:dn_theory}. Similar fits are made to all the nuclei (shown in the Appendix). The resultant slopes are shown in Tables~\ref{SlopeFits}, \ref{SlopeFits1}, and \ref{SlopeFits2}. The slopes are shown as a function of $A$ for the nuclei in  Fig.~\ref{fig:Aslope_summary}.
+
+  \begin{figure}[H]
+\begin{minipage}{0.5\textwidth}
+ \includegraphics[width=\textwidth]{plots/plotsvA/Aslope_q5.png}
+\end{minipage}\hfill\begin{minipage}{0.5\textwidth}
+\includegraphics[width=\textwidth]{plots/plotsvA/Aslope_l7.png}
+\end{minipage}\hfill\begin{minipage}{0.5\textwidth}
+\includegraphics[width=\textwidth]{plots/plotsvA/Aslope_all.png}
+\end{minipage}
+  \caption[]{The slopes to the fits of the $F_2$ ratios versus $x_B$ are shown for both denominators and as a function of the nucleus $A$. In all cases,  the ratio taken with respect to the sum of the free neutron and free proton components exhibits a shallower slope than that taken deuterium.}
+  \label{fig:Aslope_summary}
+\end{figure}   
+
+The slopes for each ratio for various cuts in $Q^2$ and $x_B$ are compared in Fig.~\ref{fig:Aslope_compare}. The inclusion of higher $Q^2$ and $x_B$ data in the fits generates slightly shallower slopes due to the rise seen from the nuclear effects. 
+
+\begin{figure}[H]
+\begin{minipage}{0.5\textwidth}
+ \includegraphics[width=\textwidth]{plots/plotsvA/Aslope_ad.png}
+\end{minipage}\hfill\begin{minipage}{0.5\textwidth}
+\includegraphics[width=\textwidth]{plots/plotsvA/Aslope_free.png}
+\end{minipage}
+  \caption[]{The slopes are compared for the different cuts in $Q^2$ and $x_B$. The inclusion of larger $Q^2$ and $x_B$ points in the fit generates a somewhat shallower slope.}
+  \label{fig:Aslope_compare}
+\end{figure}   
+
+Table~\ref{SlopeFits} shows the fitted slope and intercept values for both the $F_2^A$ ratio for each nucleus taken with respect to deuterium and the sum of the free neutron and free proton contributions. In Table~\ref{SlopeFits}, only fits to the data where $Q^2=5$ are shown. No iso-scalar corrections are applied to the asymmetric nuclei.
 
 \begin{table}[htb!]
 \caption{\label{SlopeFits} Summary of linear fits to $x_B$ where $Q^2=5$.}
@@ -323,6 +367,7 @@ deuterium & 0.034078+/-0.013514	& 0.963954+/-0.007694 & 0.131192+/-0.028952 &	0.
     \end{tabular}
 \end{table} 
 
+Table~\ref{SlopeFits1} shows the fitted slope and intercept values for both the $F_2^A$ ratios where all E139 $Q^2$ data are included at $x_B<0.7.$ 
 
 \begin{table}[htb!]
 \caption{\label{SlopeFits1} Summary of linear fits to $x_B$ where $Q^2=5-15$ and $x_B<0.7$.}
@@ -352,6 +397,9 @@ deuterium & 0.021260+/-0.020875 &	0.974781+/-0.011910 & 0.150795+/-0.039755	& 0.
     \end{tabular}
 \end{table} 
 
+Table~\ref{SlopeFits2} shows the fitted slope and intercept values for both the $F_2^A$ ratios where all E139 $Q^2$ data are included with no cuts on $x_B$. 
+
+
 \begin{table}[htb!]
 \caption{\label{SlopeFits2} Summary of linear fits to $x_B$ where $Q^2=5-15$ and $x_B<0.8$.}
 \centering
@@ -380,14 +428,23 @@ deuterium & -0.047904+/-0.020441	&1.011339+/-0.013123& 0.173649+/-0.034450	&0.88
     \end{tabular}
 \end{table} 
 
+The slopes from Table~\ref{SlopeFits} where $Q^2=5$ only are shown plotted against the SRC factor, $a_2$. The general fitted slope is still linear across the $a_2$ values for each nucleus, but there is a clear systematic offset between the intercept values of these two fits. The fits to the slopes with respect to the SRC factor are shown in Fig.~\ref{fig:a2_src}.
+
+\begin{figure}[H]
+\begin{minipage}{0.5\textwidth}
+      	  \includegraphics[width=\textwidth]{plots/a2SRC.png}
+      	  \end{minipage}\hfill\begin{minipage}{0.5\textwidth}
+      	        	  \includegraphics[width=\textwidth]{plots/a2SRCfixed.png}
+\end{minipage}
+ 	 \caption[]{The slopes fit to the data for $Q^2=5$ are shown versus the $a_2$ SRC factor. Left: The slope value for deuterium is that which was obtained from the fits and corresponds to Table~\ref{SlopeFits}. Right: The slope value for deuterium is set to 0.}
+  \label{fig:a2_src}
+ \end{figure}
+ 
+The intercept value of approximately -0.08 for the ratio taken with respect to deuterium when the deuterium point is set to 0 (Fig.~\ref{fig:a2_src} right) is consistent with previous studies. The intercept value is significantly smaller for the data where the original slope ratio was taken with respect to the sum of the free proton and free neutron contributions. 
 
 \section{Conclusions}
-%n and p have Q2 dependence and deuterium is not so linear. 
-%- There is a significantly more pronounced A dependence to the A/n data as a function of x as compared to the A/p (associated with the drop in n/p as a function of x)
-%- d/(n+p) has some Q^2 dependence 
-%- d/(n+p) has some x dependence
-%- Because of the point above, the EMC effect, particularly as calculated using the slope of the A/d ratios, is in part due to nuclear effects within the deuteron alone
-%- Because of the three points above, the EMC effect, particularly as calculated using the slope of the A/d ratios, has an x and Q^2 dependence
+
+The CJ Collaboration has recently extracted the free neutron structure function from the world DIS data opening new windows for exploring the EMC Effect and deuteron nuclear effects. General observations show that the deuteron ratio to the sum of the free proton and free neutron structure functions has some dependencies with $Q^2$. These dependencies have been generally ignored by previous experiments. The changes with $Q^2$ are most significant at large $Q^2$ and large $x_B$. As the EMC Effect is calculated from the slope of the nucleus to deuteron structure function ratio, there is an apparent contamination of these results due to the nuclear effects of the deuteron alone. Additionally, these effects imply that the structure function ratios at $x_B>0.6$ do not follow the linear trend of the data where $x_B$ is $>0.3$ and $x_B<0.6$.Therefore, it would seem that the EMC Effect as calculated using the slope of the $F_2^A/F_2^d$ ratio has and $x_B$ and $Q^2$ dependence. Also, there appears to be a more significant spread in $A$ in the data where the the structure function of the nucleus is taken with respect to the neutron vs the proton. This spread arises from the drop in the ratio $F_2^n/F_2^p$ as a function of $x_B$. 
 
 \section{Acknowledgments}
 
@@ -526,37 +583,5 @@ The authors would like to thank Shujie Li for constructing the most complete wor
   \caption[]{Linear fits to the $Ag$ target data with cuts on $Q^2$ and $x_B$.}
   \label{fig:fits_Ag}
 \end{figure}   
-
-\begin{figure}[H]
-\begin{minipage}{0.5\textwidth}
-      	  \includegraphics[width=\textwidth]{plots/a2SRC.png}
-      	  \end{minipage}\hfill\begin{minipage}{0.5\textwidth}
-      	        	  \includegraphics[width=\textwidth]{plots/a2SRCfixed.png}
-\end{minipage}
- 	 \caption[]{}
-  \label{fig:a2_src}
- \end{figure}
  
-  \begin{figure}[H]
-\begin{minipage}{0.5\textwidth}
- \includegraphics[width=\textwidth]{plots/plotsvA/Aslope_q5.png}
-\end{minipage}\hfill\begin{minipage}{0.5\textwidth}
-\includegraphics[width=\textwidth]{plots/plotsvA/Aslope_l7.png}
-\end{minipage}\hfill\begin{minipage}{0.5\textwidth}
-\includegraphics[width=\textwidth]{plots/plotsvA/Aslope_all.png}
-\end{minipage}
-  \caption[]{.}
-  \label{fig:Aslope_summary}
-\end{figure}   
-
-\begin{figure}[H]
-\begin{minipage}{0.5\textwidth}
- \includegraphics[width=\textwidth]{plots/plotsvA/Aslope_ad.png}
-\end{minipage}\hfill\begin{minipage}{0.5\textwidth}
-\includegraphics[width=\textwidth]{plots/plotsvA/Aslope_free.png}
-\end{minipage}
-  \caption[]{.}
-  \label{fig:Aslope_compare}
-\end{figure}   
-
 \end{document}
