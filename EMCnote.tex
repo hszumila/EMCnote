@@ -12,7 +12,7 @@
 % License:
 % CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
 %
-%TODO: references and bibliography, theory section, CJ section, intro
+%TODO: references and bibliography, theory section, CJ section
 % Which SRC values to use? I used original a2 predicted values...
 %
 %
@@ -122,22 +122,27 @@ The persistently mysterious deviations from unity of the ratio of nuclear target
 
 
 \section{Introduction}
+ 
+Deep inelastic scattering (DIS) has produced a wealth of information on the partonic structure of nuclei spanning several decades of experiments. The EMC Effect, or the observed modification to the bound nucleon partonic structure as compared to that of the free nucleon, is a direct observation from these experiments. The EMC Effect is observed in the regime where $x_B$ is from 0.3--0.7, and the magnitude is measured as the slope of the ratio of the $F_2^A/F_2^d$ structure function where $A$ is for the target nucleus and $d$ is deuterium. It was previously anticipated that this slope should be flat, but the surprising results indicated there is an $A$-dependent slope. The interpretation of this modification has been the subject of many experiments and great theoretical efforts for several decades. 
 
-Deep inelastic scattering experiments 
+From DIS, a great deal of information is known about the proton, the neutron structure is less understood. A recent effort by the CTEQ-Jefferson Lab Collaboration has reviewed the world DIS data and extracted the free neutron structure function for all kinematics. Knowledge of the neutron structure function is essential for the next generation of future DIS experiments. 
+
+Using the newly obtained free neutron structure function from CJ15, the EMC Effect can be examined in a different way. The original SLAC E139 experiment is the only experiment to have published the measured cross sections in addition to the measured $F_2^A/F_2^d$ ratios. By re-analyzing the data starting from the cross sections of the SLAC E139 experiment, the EMC Effect can be understood in terms of the free proton and free neutron independently of the nuclear effects of deuterium. Fig.~\ref{fig:slac_q2x} shows the kinematics of the E139 experiment.
+
 
 \begin{figure}[H]
   \centering
       	  \includegraphics[width=0.5\textwidth]{plots/F2ADdataQ2vsx.eps}
- 	 \caption[]{}
+ 	 \caption[]{The kinematics $x_B$ and $Q^2$ are shown from the SLAC E139 experiment for the target nuclei.}
   \label{fig:slac_q2x}
  \end{figure} 
+
+The kinematics span the range of $x_B$ from approximately 0.1--0.7 and $Q^2$ from 2-15 GeV$^2$ depending on the target nucleus. The target nuclei include deuterium, helium, beryllium, carbon, calcium, iron, aluminum, silver, and gold.  
  
 \section{Theory predictions using nuclear matter}
 
-Discussion points: predicted d/n and d/p ratios, interpretations in quark distributions, emc effects in deuterium
+Recent theoretical extractions of the $F_2^d$ per nucleon are shown in Fig.~\ref{fig:dn_theory}. These results indicate that in the xB range of interest to the EMC Effect (from 0.3--0.7), theoretical models show that nuclear modification of nearly 2$\%$ at $x_B<0.6$, and the modification becomes quite large at values of $x_B$ between 0.6--0.7. Additionally, the nuclear effects in deuterium alone do not follow a linear fit as has been applied to EMC data in this regime where $F_2^d$ is the denominator. 
 
-
-  
 \begin{figure}[H]
   \centering
       	  \includegraphics[width=0.5\textwidth]{plots/dn_effects_theory.png}
@@ -145,6 +150,8 @@ Discussion points: predicted d/n and d/p ratios, interpretations in quark distri
   \label{fig:dn_theory}
  \end{figure}  
  
+Beginning with quark models and choosing $Q^2=5$ GeV$^2$, theoretically-derived $F_2$ ratios with respect to the free neutron and free proton are shown in Fig.~\ref{fig:deut_theory}. 
+
 \begin{figure}[H]
   \centering
       	  \includegraphics[width=0.5\textwidth]{plots/deut_ratio_theory.png}
@@ -152,6 +159,10 @@ Discussion points: predicted d/n and d/p ratios, interpretations in quark distri
   \label{fig:deut_theory}
  \end{figure}  
   
+From the models shown in Fig.~\ref{fig:deut_theory}, the F2 deuterium ratio with respect to the sum of the free neutron and free proton contributions is shown in red (and dips just below unity in the EMC Effect regime). By taking the ratio of $F_2^d/2F_2^p$ (shown in green), the slope dips far below unity and is greater in magnitude than the $F_2$ deuterium ratio shown in red. Taking $F_2^d/2F_2^n$ shows a positive slope that is of greater magnitude than $F_2^d/2F_2^p$. 
+
+%TODO: needs interpretation and further discussion/explanation.
+
 \section{$F_2^n$ extraction and the CJ15 fit}
 
 Recent work by the CTEQ-Jefferson Lab (CJ) Collaboration reviewed the world DIS data on the proton and deuteron structure functions and extracted the free neutron structure function over the full range of kinematics. Through the application of the latest and best known deuteron nuclear corrections, the full global DIS data set provides the equivalent neutron data set. This extracted free neutron structure function enables the authors of this paper to examine the EMC Effect in a new way. 
@@ -228,7 +239,7 @@ K=&\dfrac{W^2-M^2}{2M}\\
 \label{eq:f2eqndetails}
 \end{align}
 
-For most published cross section ratios, corrections are applied to account for the excess of neutrons in asymmetric nuclei. This correction is referred to as the ``isoscalar correction" and is defined in Equation~\eqref{eq:isocorr}. While this correction is not applied in this paper for the $F_2$ ratios per free proton and free neutron, it is relevant for accurately reconstructing the published $F_2^A$/$F_2^d$ cross sections as in most analyses. 
+For most published cross section ratios, corrections are applied to account for the excess of neutrons in asymmetric nuclei. This correction is referred to as the ``isoscalar correction" and is defined in Equation~\eqref{eq:isocorr}. While this correction is not applied in this paper for the $F_2$ ratios per free proton and free neutron, it is relevant for accurately reconstructing the published $F_2^A$/$F_2^d$ cross sections as in most analyses. For all analysis in this paper, an additional requirement for $W^2>4$ GeV$^2$ was applied in order to ensure that the results obtained are above the resonance region.  
 
 \begin{equation}
 f_{iso}^A = \dfrac{\dfrac{1}{2}(1+F_2^n/F_2^p)}{\dfrac{1}{A}(Z+(A-Z)F_2^n/F_2^p)}
@@ -445,6 +456,8 @@ The intercept value of approximately -0.08 for the ratio taken with respect to d
 \section{Conclusions}
 
 The CJ Collaboration has recently extracted the free neutron structure function from the world DIS data opening new windows for exploring the EMC Effect and deuteron nuclear effects. General observations show that the deuteron ratio to the sum of the free proton and free neutron structure functions has some dependencies with $Q^2$. These dependencies have been generally ignored by previous experiments. The changes with $Q^2$ are most significant at large $Q^2$ and large $x_B$. As the EMC Effect is calculated from the slope of the nucleus to deuteron structure function ratio, there is an apparent contamination of these results due to the nuclear effects of the deuteron alone. Additionally, these effects imply that the structure function ratios at $x_B>0.6$ do not follow the linear trend of the data where $x_B$ is $>0.3$ and $x_B<0.6$.Therefore, it would seem that the EMC Effect as calculated using the slope of the $F_2^A/F_2^d$ ratio has and $x_B$ and $Q^2$ dependence. Also, there appears to be a more significant spread in $A$ in the data where the the structure function of the nucleus is taken with respect to the neutron vs the proton. This spread arises from the drop in the ratio $F_2^n/F_2^p$ as a function of $x_B$. 
+
+%TODO: Add something here about potential effects and ideas for future experiments.
 
 \section{Acknowledgments}
 
